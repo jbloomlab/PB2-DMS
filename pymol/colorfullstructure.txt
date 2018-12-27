@@ -1,0 +1,19 @@
+### Color subunits
+metric = 'fullstructure'
+# Nter
+for r in range(1, 247):
+    cmd.color('oxygen', 'resi {0} and S009'.format(r))
+# Mid-link
+for r in range(247,319) + range(481,538):
+    cmd.color('wheat', 'resi {0} and S009'.format(r))    
+# Capbinding
+for r in range(319, 481):
+    cmd.color('selenium', 'resi {0} and S009'.format(r))
+# 627
+for r in range(538, 680):
+    cmd.color('salmon', 'resi {0} and S009'.format(r))
+# NLS
+for r in range(680, 742):
+    cmd.color('firebrick', 'resi {0} and S009'.format(r))
+
+

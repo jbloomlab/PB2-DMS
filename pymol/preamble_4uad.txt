@@ -1,0 +1,44 @@
+###### PREAMBLE
+
+import pymol
+from pymol import cmd
+import sys
+
+structure = '4uad'
+
+cmd.reinitialize()
+cmd.set('bg_rgb','[1,1,1]') # white
+cmd.set('antialias','2')
+cmd.set('ray_opaque_background','off')
+cmd.set('depth_cue', 'off')
+
+### Modify here
+url ='https://files.rcsb.org/download/4UAD.pdb'
+cmd.load(url, 'orig')
+
+cmd.select('importin', 'chain A')
+cmd.select('origPB2', 'chain E')
+
+cmd.load('S009PB2_{0}.pdb'.format(structure, 'S009'))
+cmd.super('S009', 'origPB2')
+
+cmd.hide('everything')
+cmd.show('cartoon')
+# cmd.show('surface')
+for c in ['importin', 'S009']:
+	cmd.show('surface', '{0}'.format(c))
+# cmd.remove('origPB2')
+cmd.color('wheat', 'importin')
+cmd.color('white', 'S009')
+
+cmd.orient()
+
+
+### To get PB2 only
+cmd.hide('everything')
+# cmd.hide('everything', 'origPB2')
+# cmd.hide('surface', 'S009')
+cmd.show('cartoon', 'importin')
+cmd.show('surface', 'S009')
+
+###### END PREAMBLE

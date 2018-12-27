@@ -1,0 +1,7 @@
+metric='MartinResidues'
+cmd.color('white', 'S009')
+
+# Map sites identified by Martin and Fodor 2018 as interacting with polII-CTD
+for r in [660, 662, 683, 728, 732]:
+    cmd.color('green', 'resi {0} and S009'.format(r))
+    cmd.show('spheres', 'resi {0} and S009'.format(r))

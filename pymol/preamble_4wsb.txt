@@ -1,0 +1,42 @@
+###### PREAMBLE
+
+import pymol
+from pymol import cmd
+import sys
+
+structure = '4wsb'
+
+cmd.reinitialize()
+cmd.set('bg_rgb','[1,1,1]') # white
+cmd.set('antialias','2')
+cmd.set('ray_opaque_background','off')
+cmd.set('depth_cue', 'off')
+
+### Modify here
+url = 'https://files.rcsb.org/download/4WSB.pdb'
+cmd.load(url, 'bat')
+cmd.select('batPA', 'chain A')
+cmd.select('batPB1', 'chain B')
+cmd.select('batPB2', 'chain C')
+
+cmd.load('S009PB2_{0}.pdb'.format(structure, 'S009'))
+cmd.super('S009', 'bat')
+
+cmd.hide('everything')
+cmd.show('cartoon')
+# cmd.show('surface')
+for c in ['batPA', 'batPB1', 'S009']:
+	cmd.show('surface', '{0}'.format(c))
+cmd.remove('batPB2')
+cmd.color('palegreen', 'batPA')
+cmd.color('palecyan', 'batPB1')
+
+cmd.orient()
+
+### To get PB2 only
+cmd.hide('everything', 'bat')
+cmd.hide('surface', 'S009')
+# cmd.show('cartoon', 'bat')
+cmd.show('surface', 'S009')
+
+###### END PREAMBLE

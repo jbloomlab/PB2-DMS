@@ -1,0 +1,12 @@
+metric='Pumroy'
+cmd.color('white', 'S009')
+
+# Map sites identified by Pumroy 2015 as interacting with importin-alpha-3
+
+for r in [752, 753, 755]: #major NLS-binding pocket
+    cmd.color('green', 'resi {0} and S009'.format(r))
+    cmd.show('spheres', 'resi {0} and S009'.format(r))
+
+for r in [738, 739, 737, 718]: #minor NLS-binding site
+    cmd.color('cyan', 'resi {0} and S009'.format(r))
+    cmd.show('spheres', 'resi {0} and S009'.format(r))

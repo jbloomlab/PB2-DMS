@@ -1,0 +1,66 @@
+# 20170508 Sequencing results from 51 clones after 1 round of mutagenesis of S009 PB2 (10 cycles)
+
+4_3-c1: None
+4_3-c2: delA556, AA565GT, AGC958CTA
+4_3-c3: None
+#4_3-c4: Internal deletion
+4_3-c5: delCC1338, C1873G
+4_3-c6: A698C
+4_3-c7: C1793T, G1937A
+4_3-c8: GA562TT, GTC1750CAT, GGA1924AGG
+4_3-c9: None
+4_3-c10: AG1888CA, GG1951TT
+4_3-c11: None
+4_3-c12: T1511A
+4_3-1: None
+4_3-2: A206C, A811C, GTG1633TTA, TG1808AC, TCT1957AAG
+4_3-3: G472T, GGA1780CAG
+4_3-4: TC274AG, GA760TG
+4_3-5: A889T
+# Plate clones are all OK for inserts. Miniprepped clones have poor seq quality around R insert site
+
+5_3-c13: None
+5_3-c14: delA1011, AGA1018TCG
+5_3-c15: None
+5_3-c16: GAG844ACC, TGC931CCA, GAA1354TTG, A2049T
+5_3-c17: None
+#5_3-c18 is probably a mixed colony: AC103GA, incomplete sequence, TCT2221GGG, CA2246GT, GG2258AA
+5_3-c19: CT1184AG, TA1844AC
+5_3-c20: TC1540GT, C2253A
+5_3-c21: C1735A
+5_3-c22: CG49AC, GAC823AAA, ATA1585CTG
+5_3-c23: GA1823TT
+5_3-c24: C965G, AA1318TC, A1437T, G1864A, A2111G
+5_3-1: TC1009GA
+5_3-2: AC887TA
+5_3-3: delGGA1124, A1399G
+#5_3-4: Only fragment cloned
+5_3-5: AA572CG
+# Plate clones are all OK for inserts. Miniprepped clones have poor seq quality around R insert site
+
+6_3-c25: TT1994GC
+6_3-c26: None
+6_3-c27: None
+6_3-c28: GC2014AT
+6_3-c29: AG1267CC
+6_3-c30: GTT499TGC, GTA607ATT, ATA796TAC, delA802, GG1937AA
+6_3-c31: GAG1474ATC
+6_3-c32: TC40GT
+6_3-c33: T1418C
+6_3-c34: None
+6_3-c35: G1374A, AT1492TA
+6_3-c36: GAG562CGC, C986T, C1398G, CG1562GT
+6_3-1: CAT79GCA, AAT1717CAC, AGG1789TAA
+6_3-2: None
+6_3-3: ATT169TTA, ATA439CGT, A1689G
+6_3-4: None
+6_3-5: C2094A
+
+# Plate clones are all OK for inserts. Miniprepped clones have poor seq quality around R insert site
+
+#F and R cloning sites all look good, except for where low quality sequence. 
+#Controls look good, just 1 mut
+#8_3_c37: None
+#8_3_c38: None
+#8_3_c39: None
+#8_3_c40: G>C

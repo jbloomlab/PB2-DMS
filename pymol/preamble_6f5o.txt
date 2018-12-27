@@ -1,0 +1,44 @@
+###### PREAMBLE
+
+import pymol
+from pymol import cmd
+import sys
+
+structure = '6f5o'
+
+cmd.reinitialize()
+cmd.set('bg_rgb','[1,1,1]') # white
+cmd.set('antialias','2')
+cmd.set('ray_opaque_background','off')
+cmd.set('depth_cue', 'off')
+
+### Modify here
+url ='https://files.rcsb.org/download/6F5O.pdb'
+cmd.load(url, 'orig')
+
+cmd.select('origPA', 'chain A')
+cmd.select('origPB1', 'chain B')
+cmd.select('origPB2', 'chain C')
+
+cmd.load('S009PB2_{0}.pdb'.format(structure, 'S009'))
+cmd.super('S009', 'orig')
+
+cmd.hide('everything')
+cmd.show('cartoon')
+# cmd.show('surface')
+for c in ['origPA', 'origPB1', 'S009']:
+	cmd.show('surface', '{0}'.format(c))
+cmd.remove('origPB2')
+cmd.color('palegreen', 'origPA')
+cmd.color('palecyan', 'origPB1')
+cmd.color('white', 'S009')
+
+cmd.orient()
+
+### To get PB2 only
+cmd.hide('everything', 'orig')
+cmd.hide('surface', 'S009')
+# cmd.show('cartoon', 'orig')
+cmd.show('surface', 'S009')
+
+###### END PREAMBLE

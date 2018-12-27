@@ -1,0 +1,18 @@
+metric = 'topA549'
+cmd.color('white', 'S009')
+
+# knownAdaptive
+for r in [256, 9, 526, 271, 660, 534, 535, 158, 286, 684, 701, 189, 702, 192, 199, 74, 714, 588, 591, 740, 489, 627, 636, 253]:
+	cmd.color('blue', 'resi {0} and S009'.format(r))
+	cmd.show('spheres', 'resi {{0}} and S009'.format(r))
+
+# topA549
+for r in [521, 522, 9, 532, 156, 669, 158, 163, 292, 676, 169, 684, 176, 182, 183, 698, 701, 190, 69, 82, 355, 627]:
+	cmd.color('red', 'resi {0} and S009'.format(r))
+	cmd.show('spheres', 'resi {{0}} and S009'.format(r))
+
+# knownAdaptiveAndTopA549
+for r in [9, 684, 627, 701, 158]:
+	cmd.color('magenta', 'resi {0} and S009'.format(r))
+	cmd.show('spheres', 'resi {{0}} and S009'.format(r))
+

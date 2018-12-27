@@ -1,0 +1,13 @@
+###### POSTAMBLE
+
+cmd.select(None)
+cmd.set('specular', "off")
+cmd.draw(width=1000, height=1000)
+cmd.png('{0}_{1}.png'.format(structure, metric), ray=1)
+cmd.rotate('y', angle=180)
+cmd.draw(width=1000, height=1000)
+cmd.png('{0}_{1}_y.png'.format(structure, metric), ray=1)
+cmd.rotate('y', angle=180)
+cmd.rotate('x', angle=90)
+cmd.draw(width=1000, height=1000)
+cmd.png('{0}_{1}_x.png'.format(structure, metric), ray=1)
