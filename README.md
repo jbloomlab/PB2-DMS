@@ -31,6 +31,12 @@ Analyses are organized by figure. Notebooks for Fig1 through Fig7 need to be run
 
 * [`FigS1_compareS009.ipynb`](FigS1_compareS009.ipynb)
 
+### Running the notebooks
+
+The notebooks are all run in order using the bash script [run_notebooks.bash](run_notebooks.bash).
+To run them on the Hutch cluster, use:
+
+    sbatch -p largenode -c 14 --mem=300000 --time=48:00:00 run_notebooks.bash
 
 ### Subdirectories
 
