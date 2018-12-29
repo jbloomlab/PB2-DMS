@@ -3,6 +3,22 @@
 *.pyc
 *.out
 fastq
-results
 compareS009/raxmlout
 
+results/*
+
+!results/codoncounts
+results/codoncounts/*
+!results/codoncounts/*codoncounts.csv
+
+!results/diffsel
+results/diffsel/*
+!results/diffsel/*diffsel.csv
+
+!results/prefs_A549
+results/prefs_A549/*
+!results/prefs_A549/*prefs*.csv
+
+!results/prefs_CCL141
+results/prefs_CCL141/*
+!results/prefs_CCL141/*prefs*.csv
